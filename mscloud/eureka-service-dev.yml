@@ -16,7 +16,7 @@ eureka:
     hostname: eureka-server-7000
   client:
     service-url:
-      defaultZone: http://eureka-server-7000:7000/eureka
+      defaultZone: http://localhost:7000/eureka
     fetch-registry: false
     register-with-eureka: false
 
