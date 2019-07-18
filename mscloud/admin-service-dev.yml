@@ -12,5 +12,5 @@ eureka:
     hostname: admin-service-2000
   client:
     service-url:
-      defaultZone: http://eureka-server-7000:7000/eureka
+      defaultZone: http://eureka-server-7000:7000/eureka/, http://eureka-server-7001:7001/eureka/, http://eureka-server-7002:7002/eureka/
 
