@@ -16,6 +16,7 @@ spring:
           search-paths: mscloud
           username:
           password:
+          skip-ssl-validation: true
 
 server:
   port: 8888
