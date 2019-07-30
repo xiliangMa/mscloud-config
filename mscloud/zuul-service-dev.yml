@@ -13,10 +13,12 @@ server:
 
 eureka:
   instance:
-    hostname: api-gateway-5000
+    hostname: mscloud-api-gateway-service
   client:
     service-url:
-      defaultZone: http://eureka-server-7000:7000/eureka/, http://eureka-server-7001:7001/eureka/, http://eureka-server-7002:7002/eureka/
+      # k8s
+      defaultZone: http://mscloud-eureka-service:7000/eureka/
+      # defaultZone: http://eureka-server-7000:7000/eureka/, http://eureka-server-7001:7001/eureka/, http://eureka-server-7002:7002/eureka/
 
 zuul:
   routes:
