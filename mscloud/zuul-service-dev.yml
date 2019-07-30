@@ -1,6 +1,6 @@
 spring:
   application:
-    name: mscloud-zuul
+    name: zuul
   zipkin:
     base-url: http://mscloud-zipkin-service:8080
   boot:
