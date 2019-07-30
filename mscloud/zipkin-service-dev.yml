@@ -4,7 +4,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://admin-service-2000:2000
+        url: http://mscloud-admin-service:2000
 
 server:
   port: 3000

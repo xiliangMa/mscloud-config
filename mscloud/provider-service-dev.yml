@@ -2,11 +2,11 @@ spring:
   application:
     name: provider-service
   zipkin:
-    base-url: http://zipkin-service-3000:8080
+    base-url: http://mscloud-zipkin-service:8080
   boot:
     admin:
       client:
-        url: http://admin-service-2000:2000
+        url: http://mscloud-admin-service:2000
 
 server:
   port: 8000
