@@ -13,10 +13,12 @@ server:
 
 eureka:
   instance:
-    hostname: consumer-service-feign-9001
+    hostname: mscloud-consumer-service-feign
   client:
     service-url:
-      defaultZone: http://eureka-server-7000:7000/eureka/, http://eureka-server-7001:7001/eureka/, http://eureka-server-7002:7002/eureka/
+      # k8s
+      defaultZone: http://mscloud-eureka-service:7000/eureka/
+      # defaultZone: http://eureka-server-7000:7000/eureka/, http://eureka-server-7001:7001/eureka/, http://eureka-server-7002:7002/eureka/
 
 # 开启feign 熔断器
 feign:
