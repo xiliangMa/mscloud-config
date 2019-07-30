@@ -19,7 +19,7 @@ eureka:
   client:
     service-url:
       # k8s
-      defaultZone: mscloud-eureka-service:7000/eureka/
+      defaultZone: http://mscloud-eureka-service:7000/eureka/
       # defaultZone: http://eureka-server-7000:7000/eureka/, http://eureka-server-7001:7001/eureka/, http://eureka-server-7002:7002/eureka/
     fetch-registry: false
     register-with-eureka: false
