@@ -7,6 +7,10 @@ spring:
     admin:
       client:
         url: http://mscloud-admin-service:2000
+        instance:
+          management-url: http://mscloud-eureka-service:7000/actuator
+          health-url: http://mscloud-eureka-service:7000/actuator/health
+          service-url: http://mscloud-eureka-service:7000
 
 server:
   port: 7000

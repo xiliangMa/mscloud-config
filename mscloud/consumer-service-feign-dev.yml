@@ -7,13 +7,17 @@ spring:
     admin:
       client:
         url: http://mscloud-admin-service:2000
+        instance:
+          management-url: http://mscloud-consumer-feign-service:9001/actuator
+          health-url: http://mscloud-consumer-feign-service:9001/actuator/health
+          service-url: http://mscloud-consumer-feign-service:9001
 
 server:
   port: 9001
 
 eureka:
   instance:
-    hostname: mscloud-consumer-service-feign
+    hostname: mscloud-consumer-feign-service
   client:
     service-url:
       # k8s
