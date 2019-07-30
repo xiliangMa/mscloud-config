@@ -1,6 +1,6 @@
 spring:
   application:
-    name: api-gateway
+    name: mscloud-zuul
   zipkin:
     base-url: http://mscloud-zipkin-service:8080
   boot:
@@ -8,16 +8,16 @@ spring:
       client:
         url: http://mscloud-admin-service:2000
         instance:
-          management-url: http://mscloud-api-gateway-service:5000/actuator
-          health-url: http://mscloud-api-gateway-service:5000/actuator/health
-          service-url: http://mscloud-api-gateway-service:5000
+          management-url: http://mscloud-zuul-service:5000/actuator
+          health-url: http://mscloud-zuul-service:5000/actuator/health
+          service-url: http://mscloud-zuul-service:5000
 
 server:
   port: 5000
 
 eureka:
   instance:
-    hostname: mscloud-api-gateway-service
+    hostname: mscloud-zuul-service
   client:
     service-url:
       # k8s
