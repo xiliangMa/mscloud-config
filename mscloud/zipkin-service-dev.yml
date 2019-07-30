@@ -5,7 +5,10 @@ spring:
     admin:
       client:
         url: http://mscloud-admin-service:2000
-
+        instance:
+          management-url: http://mscloud-zipkin-service:3000/actuator
+          health-url: http://mscloud-zipkin-service:3000/actuator/health
+          service-url: http://mscloud-zipkin-service:3000
 server:
   port: 3000
 
